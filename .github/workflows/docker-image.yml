@@ -27,6 +27,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ${{ secrets.DOCKERUSERNAME }}/project:latest
+        tags: ${{ secrets.DOCKERUSERNAME }}/tools-image:$(date +%s)
         file: ./Dockerfile
       
